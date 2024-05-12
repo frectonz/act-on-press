@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Act on Press",
+  "version": "1.0",
+
+  "description": "Trigger click actions on press instead of release.",
+
+  "icons": {
+    "48": "act-on-press-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["inject.js", "script.js"]
+    }
+  ]
+}
