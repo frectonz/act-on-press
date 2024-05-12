@@ -12,7 +12,22 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["inject.js", "script.js"]
+      "js": ["inject.js"]
     }
-  ]
+  ],
+
+  "permissions": ["storage"],
+
+  "browser_action": {
+    "default_icon": "act-on-press-48.png",
+    "theme_icons": [
+      {
+        "light": "act-on-press-48-light.png",
+        "dark": "act-on-press-48.png",
+        "size": 48
+      }
+    ],
+    "default_title": "Act on Press",
+    "default_popup": "popup/index.html"
+  }
 }
